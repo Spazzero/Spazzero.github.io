@@ -138,7 +138,19 @@ function siteUrlForRoute(route) {
   return `${SITE_ORIGIN}${publicPathForRoute(route)}`;
 }
 
-const pages = walk(OUT, (name) => name.endsWith('.html'));
+/**
+ * Search-engine ownership tokens are `.html` by extension only: a single line
+ * of text with no head, title, or metadata. They are not pages, and the
+ * provider requires the file be served byte-for-byte as issued, so they cannot
+ * be given the tags every real page is checked for. Match the exact filenames
+ * rather than a broad pattern, so an actual page is never skipped by accident.
+ */
+const VERIFICATION_FILES = new Set(['google3b29eb1f58e51655.html']);
+
+const pages = walk(
+  OUT,
+  (name) => name.endsWith('.html') && !VERIFICATION_FILES.has(name),
+);
 
 if (pages.length === 0) {
   console.error('verify-export: no HTML found in out/. Did the build run?');
