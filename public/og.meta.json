@@ -1,0 +1,16 @@
+{
+  "size": {
+    "width": 1200,
+    "height": 630
+  },
+  "profile": {
+    "name": "Gerald Yuen",
+    "employer": "Covalent Capital",
+    "focus": "Finance & Data Analytics",
+    "countriesVisited": 21,
+    "computingSince": 2018,
+    "currentCity": "Singapore"
+  },
+  "generatorDigest": "5505416a7c1b55eccde54343e7c93200ebb266428d3d025624371b712243d3eb",
+  "imageDigest": "7d741ad939fb3522fa08601643c5524d38308d0259c8a3a25d332cbea1d3c80b"
+}
