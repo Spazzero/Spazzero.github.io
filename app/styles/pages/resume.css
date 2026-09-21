@@ -30,16 +30,8 @@
   border-top: var(--rule) solid var(--color-fg-bold);
 }
 
-.resume-page .skills {
-  margin-top: 2em;
-}
-
 .resume-page .skills .title p {
   font-size: var(--text-md);
-}
-
-.resume-page .courses {
-  padding-top: 1em;
 }
 
 .resume-page .courses .course-list {
@@ -55,10 +47,6 @@
   .resume-page .courses .course-list {
     grid-template-columns: 1fr;
   }
-}
-
-.resume-page .references {
-  margin: var(--spacing-8) 0;
 }
 
 /* Resume page specific */
@@ -157,10 +145,13 @@
   outline-offset: 3px;
 }
 
+/* One gap owns the rhythm between sections. Per-section `margin-top` /
+   `padding-top` overrides used to stack on top of it, so the space below
+   Education and Courses read as larger than the rest. */
 .resume-content {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: var(--spacing-12);
   padding-top: 2.5rem;
 }
 

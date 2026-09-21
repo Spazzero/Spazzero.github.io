@@ -41,18 +41,26 @@ const courses: Course[] = [
   // Temasek Polytechnic
   {
     title: 'Data Analytics',
+    number: 'CIA1C10',
+    link: 'https://www.tp.edu.sg/schools-and-courses/students/schools/iit/big-data-analytics.html',
     university: 'Temasek Polytechnic',
   },
   {
     title: 'Data Mining & Business Analytics',
+    number: 'CDA2C02',
+    link: 'https://www.tp.edu.sg/schools-and-courses/students/schools/iit/big-data-analytics.html',
     university: 'Temasek Polytechnic',
   },
   {
     title: 'Database App Development',
+    number: 'CIA1C06',
+    link: 'https://www.tp.edu.sg/schools-and-courses/students/schools/iit/big-data-analytics.html',
     university: 'Temasek Polytechnic',
   },
   {
     title: 'Data Structures & Algorithms',
+    number: 'CIT1C14',
+    link: 'https://www.tp.edu.sg/schools-and-courses/students/schools/iit/big-data-analytics.html',
     university: 'Temasek Polytechnic',
   },
 ];
