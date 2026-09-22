@@ -454,6 +454,21 @@
   }
 }
 
+/* Justified prose, but only where the measure can carry it. Justification
+   without hyphenation opens rivers of whitespace; below this width the
+   measure is too short for the browser to distribute slack invisibly, so
+   the paragraphs stay ragged-right there. `hyphenate-limit-chars` keeps
+   the breaks off short words and leaves at least three letters on each
+   side. The other `hyphenate-limit-*` properties are only implemented
+   behind `-webkit-` in Safari, so they are deliberately left out. */
+@media (min-width: 736px) {
+  .about-content p {
+    text-align: justify;
+    hyphens: auto;
+    hyphenate-limit-chars: 8 3 3;
+  }
+}
+
 @media (min-width: 736px) {
   .about-section--compact ul {
     columns: 2;
