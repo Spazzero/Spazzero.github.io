@@ -1,16 +1,14 @@
 export const aboutMarkdown = `# Intro
 
-I work across finance and technology. I'm building a career in financial services while working on my own projects on the side.
+I currently work at Covalent Capital as a Data Engineering and Debt Capital Markets Analyst Intern. I've sourced and reconciled 200+ corporate bond documents across Asia, Australia and Europe, and these days I'm focused on automating parts of the primary bond issuance process with AI agents.
 
-I've been interested in financial markets since I was a teenager. At 16, I set up my first software crypto wallet and started trading on the blockchain. That's how I found Ethereum and began exploring Web3. I made many mistakes early on, including losing money to rug pulls, and learned how a largely unregulated market works when you alone are responsible for protecting your money. I later took part in several ICOs, including the Solana and Mina Protocol token sales on CoinList.
+I've been interested in financial markets since I was a teenager. Some of my earliest memories are of sitting on the couch in the morning while my dad drank his coffee and watched Bloomberg. At 16, I set up my first crypto software wallet (I got my Ledger later on), which introduced me to Ethereum and, before long, to other blockchains and layer 2 networks. I made plenty of mistakes early on. I provided liquidity to pools without really understanding impermanent loss or how much a pair's liquidity mattered, and I learned the hard way what it means to operate in a largely unregulated market, where you alone are responsible for protecting your keys and your money. Later, I took part in several ICOs, including the Solana and Mina Protocol token sales on CoinList, which gave me capital for other ventures.
 
-At 18, I opened my first brokerage account. Trading crypto and equities taught me what risk tolerance and risk management mean in practice. On some days my portfolio fell by $30,000. That may not sound like much to an adult, but it was a large amount for a teenager, especially one paying for his trading with part-time work.
+At 18, I opened my first brokerage account. Trading crypto and equities taught me what risk tolerance and risk management actually mean in practice, and why conviction matters. Around the same time, I was studying Big Data and Analytics at Temasek Polytechnic, where I learned programming, predictive modelling and machine learning before it became cool. That gave me the conviction to make a few early bets on AI, particularly AMD and Palantir. My years in crypto had already made me comfortable with volatility, so I was able to hold those positions through the swings, to which I'm grateful for.
 
-I studied Big Data and Analytics at Temasek Polytechnic, where I learned machine learning. During national service in 2022 and 2023, I read about enterprise AI companies and started buying Palantir while it was still unprofitable. I concluded that the company would reach profitability years earlier than the market expected, and that AI was about to change the broader market. I built a large position at an average cost of $8 to $14 per share and have held most of it since. I also dollar-cost averaged into AMD while it traded below $100 a share, on the view that compute was the main constraint on AI growth. My years in crypto had made me comfortable holding high-conviction positions through volatility when I had a clear thesis.
+After National Service, I started studying B.Eng. Engineering Systems Design at the Singapore University of Technology and Design, specialising in Financial Services. I'm currently preparing for the Claude Certified Architect exam and the CFA Level 1, and I'm looking for 2027 internships in tech and financial services.
 
-After national service, I studied Engineering Systems Design at the Singapore University of Technology and Design, specialising in Financial Services.
-
-My experience in crypto and markets, along with my technical training at Temasek Polytechnic and SUTD, has put me in a fortunate position. I'm now building a career in financial services and working on my own projects outside of it. If you'd like to collaborate or talk about markets and technology, feel free to get in touch.
+If you'd like to collaborate or just talk markets and technology, feel free to reach out :)
 
 # Some History
 
