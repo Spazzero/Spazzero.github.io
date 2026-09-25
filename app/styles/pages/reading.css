@@ -1,0 +1,141 @@
+/* 
+READING PAGE STYLES
+Books grouped by year finished
+*/
+
+.reading-page {
+  max-width: var(--measure-page);
+  margin: 0;
+  padding: 0;
+}
+
+.reading-header {
+  margin-bottom: 2rem;
+}
+
+.reading-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.book-item {
+  padding: 0;
+  border-bottom: var(--rule) solid var(--color-border);
+}
+
+.book-item:first-child {
+  border-top: var(--rule) solid var(--color-fg-bold);
+}
+
+/* Every row reserves the toggle column, so rows with and without a note
+   keep their columns aligned. */
+.book-row {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr) 7.5rem 5.5rem 1rem;
+  grid-template-areas: 'title author date rating toggle';
+  align-items: baseline;
+  column-gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.book-row--toggle {
+  cursor: pointer;
+  list-style: none;
+  transition: background-color var(--duration-instant) var(--ease-out);
+}
+
+.book-row--toggle::-webkit-details-marker {
+  display: none;
+}
+
+.book-row--toggle:hover,
+.book-row--toggle:focus-visible {
+  background-color: var(--color-surface-subtle);
+}
+
+.book-row--toggle:hover .book-title,
+.book-row--toggle:focus-visible .book-title {
+  color: var(--color-accent);
+}
+
+.book-title {
+  grid-area: title;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--tracking-tight);
+  line-height: 1.25;
+  color: var(--color-fg-bold);
+  transition: color var(--duration-instant) var(--ease-out);
+}
+
+.book-author {
+  grid-area: author;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  line-height: var(--leading-snug);
+  color: var(--color-fg-light);
+}
+
+.book-date {
+  grid-area: date;
+  font-family: var(--font-mono);
+  font-size: var(--text-2xs);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-fg-light);
+}
+
+.book-rating {
+  grid-area: rating;
+  font-family: var(--font-mono);
+  font-size: var(--text-md);
+  letter-spacing: var(--tracking-wide);
+  white-space: nowrap;
+  color: var(--color-fg-bold);
+}
+
+.book-toggle {
+  grid-area: toggle;
+  justify-self: end;
+  font-family: var(--font-mono);
+  font-size: var(--text-ui);
+  color: var(--color-fg-light);
+}
+
+.book-toggle::before {
+  content: '+';
+}
+
+.book-details[open] .book-toggle::before {
+  content: '−';
+}
+
+.book-note {
+  max-width: var(--measure-read);
+  margin: 0;
+  padding: 0 0 1.25rem;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  line-height: var(--leading-snug);
+  color: var(--color-fg);
+}
+
+@media (max-width: 640px) {
+  .book-row {
+    grid-template-columns: minmax(0, 1fr) auto auto 1rem;
+    grid-template-areas:
+      'title title title toggle'
+      'author date rating .';
+    column-gap: 0.75rem;
+    row-gap: 0.35rem;
+  }
+}

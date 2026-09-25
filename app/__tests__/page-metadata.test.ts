@@ -7,6 +7,7 @@ import { metadata as aboutMetadata } from '../about/page';
 import { metadata as contactMetadata } from '../contact/page';
 import { metadata as notFoundMetadata } from '../not-found';
 import { metadata as projectsMetadata } from '../projects/page';
+import { metadata as readingMetadata } from '../reading/page';
 import { metadata as resumeMetadata } from '../resume/page';
 import { metadata as statsMetadata } from '../stats/page';
 import { generateMetadata as generatePostMetadata } from '../writing/[slug]/page';
@@ -21,6 +22,7 @@ describe('page metadata', () => {
     ['about', aboutMetadata, `${SITE_URL}/about/`],
     ['contact', contactMetadata, `${SITE_URL}/contact/`],
     ['archive', projectsMetadata, `${SITE_URL}/projects/`],
+    ['reading', readingMetadata, `${SITE_URL}/reading/`],
     ['resume', resumeMetadata, `${SITE_URL}/resume/`],
     ['stats', statsMetadata, `${SITE_URL}/stats/`],
     ['writing', writingMetadata, `${SITE_URL}/writing/`],
@@ -36,6 +38,7 @@ describe('page metadata', () => {
     ['about', aboutMetadata],
     ['contact', contactMetadata],
     ['archive', projectsMetadata],
+    ['reading', readingMetadata],
     ['resume', resumeMetadata],
     ['stats', statsMetadata],
     ['writing', writingMetadata],
@@ -53,6 +56,7 @@ describe('page metadata', () => {
     ['about', aboutMetadata],
     ['contact', contactMetadata],
     ['archive', projectsMetadata],
+    ['reading', readingMetadata],
     ['resume', resumeMetadata],
     ['stats', statsMetadata],
     ['writing', writingMetadata],
@@ -74,6 +78,7 @@ describe('page metadata', () => {
     ['about', aboutMetadata, `${SITE_URL}/about/`],
     ['contact', contactMetadata, `${SITE_URL}/contact/`],
     ['archive', projectsMetadata, `${SITE_URL}/projects/`],
+    ['reading', readingMetadata, `${SITE_URL}/reading/`],
     ['resume', resumeMetadata, `${SITE_URL}/resume/`],
     ['stats', statsMetadata, `${SITE_URL}/stats/`],
     ['writing', writingMetadata, `${SITE_URL}/writing/`],

@@ -26,6 +26,11 @@ const routes: Route[] = [
     path: '/writing',
   },
   {
+    label: 'Reading',
+    path: '/reading',
+    primary: false,
+  },
+  {
     label: 'Stats',
     path: '/stats',
     primary: false,

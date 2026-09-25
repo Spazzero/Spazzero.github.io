@@ -47,6 +47,11 @@ describe('Footer', () => {
       'href',
       '/resume',
     );
+    // Footer-only, like Stats and Archive: it is not in the primary nav.
+    expect(screen.getByRole('link', { name: /reading/i })).toHaveAttribute(
+      'href',
+      '/reading',
+    );
     // Labelled "Archive" to match the nav and the page's own heading;
     // the route stays /projects.
     expect(screen.getByRole('link', { name: /archive/i })).toHaveAttribute(
