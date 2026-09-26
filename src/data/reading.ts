@@ -16,17 +16,42 @@ export interface Book {
  */
 const data: Book[] = [
   {
-    title: 'Book 1 Example',
-    author: 'Author Name',
-    finished: '2026-08-14',
-    rating: 4,
-    note: 'A placeholder note. Replace it with a line or two on what the book was about and why it earned its rating.',
+    title: 'Kafka on the Shore',
+    author: 'Haruki Murakami',
+    finished: '2022-01-04',
+    rating: 5,
   },
   {
-    title: 'Book 2 Example',
-    author: 'Author Name',
-    finished: '2025-11-02',
+    title: 'The Paper Menagerie and Other Stories',
+    author: 'Ken Liu',
+    finished: '2022-01-04',
     rating: 5,
+  },
+  {
+    title: 'Off Centre',
+    author: 'Haresh Sharma',
+    finished: '2022-01-04',
+    rating: 3,
+    note: 'Watched the play live',
+  },
+  {
+    title: 'The Joy Luck Club',
+    author: 'Amy Tan',
+    finished: '2022-01-04',
+    rating: 4,
+  },
+  {
+    title: 'The Art of Thinking Clearly',
+    author: 'Rolf Dobelli',
+    finished: '2022-01-04',
+    rating: 5,
+  },
+  {
+    title:
+      'Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones',
+    author: 'James Clear',
+    finished: '2022-01-04',
+    rating: 4,
   },
 ];
 

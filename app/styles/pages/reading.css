@@ -1,6 +1,6 @@
 /* 
 READING PAGE STYLES
-Books grouped by year finished
+One list of books, newest first
 */
 
 .reading-page {
@@ -59,11 +59,11 @@ Books grouped by year finished
   color: var(--color-accent);
 }
 
+/* Titles and authors wrap instead of truncate: a subtitle is part of the
+   title. */
 .book-title {
   grid-area: title;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  text-wrap: pretty;
   font-family: var(--font-display);
   font-size: var(--text-md);
   font-weight: var(--font-weight-bold);
@@ -75,9 +75,7 @@ Books grouped by year finished
 
 .book-author {
   grid-area: author;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  text-wrap: pretty;
   font-family: var(--font-body);
   font-size: var(--text-sm);
   line-height: var(--leading-snug);
