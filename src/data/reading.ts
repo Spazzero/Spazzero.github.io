@@ -52,6 +52,7 @@ const data: Book[] = [
     author: 'James Clear',
     finished: '2022-01-04',
     rating: 4,
+    note: 'implemented habit stacking into my life',
   },
   {
     title:
@@ -59,6 +60,7 @@ const data: Book[] = [
     author: 'Robert T. Kiyosaki',
     finished: '2022-01-04',
     rating: 4,
+    note: "might be more relevant if I'm from the US",
   },
   {
     title: '12 Rules for Life: An Antidote to Chaos',
@@ -178,6 +180,7 @@ const data: Book[] = [
     author: 'Chris Miller',
     finished: '2023-04-19',
     rating: 5,
+    note: 'made me think about compute more critically',
   },
   {
     title: 'A Little Life',
@@ -233,6 +236,7 @@ const data: Book[] = [
     author: 'Ray Dalio',
     finished: '2024-01-14',
     rating: 4,
+    note: 'be radically open-minded',
   },
   {
     title:
@@ -272,6 +276,7 @@ const data: Book[] = [
     author: 'Ben McKenzie',
     finished: '2024-09-04',
     rating: 2,
+    note: 'felt like the author wrote this book to attack the industry rather than express his thoughts objectively',
   },
   {
     title: 'LeBron',
@@ -327,6 +332,7 @@ const data: Book[] = [
     author: 'Stephen Richard Witt',
     finished: '2026-01-21',
     rating: 5,
+    note: 'learnt that Jenson was from Dennys and AMD',
   },
   {
     title: 'The Kite Runner',

@@ -45,9 +45,7 @@ export default function ReadingPage() {
       <article className="reading-page">
         <header className="reading-header">
           <h1 className="page-title">Reading</h1>
-          <p className="page-subtitle">
-            Books I&apos;ve read, my GoodReads backup.
-          </p>
+          <p className="page-subtitle">My goodreads backup</p>
         </header>
 
         <ul className="reading-list" aria-label="Books read">

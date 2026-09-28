@@ -18,7 +18,7 @@ const degrees: Degree[] = [
   },
   {
     school: 'Temasek Polytechnic',
-    degree: 'Diploma in Big Data & Analytics (GPA 3.7 / 4.0)',
+    degree: 'Diploma in Big Data & Analytics',
     link: 'https://www.tp.edu.sg',
     year: 2022,
   },
