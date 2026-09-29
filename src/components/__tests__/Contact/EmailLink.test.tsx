@@ -94,7 +94,7 @@ describe('EmailLink', () => {
       //
       // The old guard recognised that only as "the previous frame is a single
       // character", which silently assumed a two-character local part. Any
-      // longer address re-types through frames like "jazzedgeral" and tripped
+      // longer address re-types through frames like "gerald.yuen" and tripped
       // the check. Testing that the previous frame is a proper prefix of the
       // address identifies legitimate typing at any length, while a jump from
       // an unrelated alias still fails.
