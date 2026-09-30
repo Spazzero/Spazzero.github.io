@@ -1,7 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 
-import profile from '@/data/profile.json';
 import Hero from '../../Template/Hero';
 
 describe('Hero', () => {
@@ -19,17 +18,15 @@ describe('Hero', () => {
     expect(heading).toHaveTextContent('Gerald Yuen');
   });
 
-  it('describes the current role and links to the employer', () => {
+  it('describes the current focus and links to the university', () => {
     const { container } = render(<Hero />);
 
-    const employerLink = screen.getByRole('link', {
-      name: /covalent capital/i,
-    });
-    expect(employerLink).toHaveAttribute('href', 'https://www.covacap.com/');
-    expect(employerLink).toHaveClass('hero-highlight');
+    const universityLink = screen.getByRole('link', { name: 'SUTD' });
+    expect(universityLink).toHaveAttribute('href', 'https://www.sutd.edu.sg');
+    expect(universityLink).toHaveClass('hero-highlight');
 
     expect(container.querySelector('.hero-tagline')).toHaveTextContent(
-      `Currently a ${profile.role} at ${profile.employer}.`,
+      "Currently building data systems for financial markets. My background spans programming, machine learning and data analytics, and I've been investing and trading since I was 16. I study Engineering Systems Design at SUTD. Right now, I'm preparing for CFA Level I and the Claude Certified Developer exam.",
     );
   });
 
@@ -41,10 +38,10 @@ describe('Hero', () => {
     expect(screen.queryByText('Countries visited')).not.toBeInTheDocument();
     expect(screen.queryByText('Computing since')).not.toBeInTheDocument();
     expect(screen.queryByText('Based in')).not.toBeInTheDocument();
-    // Named credentials from this site's own resume data, so the check still
+    // A named credential from this site's own resume data, so the check still
     // guards something. Asserting the upstream author's schools stayed absent
-    // would pass no matter what the hero rendered.
-    expect(screen.queryByText('SUTD')).not.toBeInTheDocument();
+    // would pass no matter what the hero rendered. SUTD is named in the
+    // tagline prose, so it is no longer part of this check.
     expect(screen.queryByText('Temasek Polytechnic')).not.toBeInTheDocument();
   });
 
