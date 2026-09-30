@@ -44,9 +44,7 @@
   text-wrap: balance;
 }
 
-/* Tagline — set in the body serif at reading size, measure-constrained.
-   Justified so the paragraph holds a clean block edge beside the portrait;
-   hyphenation keeps the word gaps even at a narrow measure. */
+/* Tagline — set in the body serif at reading size, measure-constrained. */
 .hero-tagline {
   font-family: var(--font-body);
   font-size: var(--text-lg);
@@ -55,8 +53,6 @@
   margin: 0 0 2rem;
   line-height: var(--leading-snug);
   font-weight: var(--font-weight-normal);
-  text-align: justify;
-  hyphens: auto;
   text-wrap: pretty;
 }
 
