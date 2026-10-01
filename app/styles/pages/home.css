@@ -56,6 +56,15 @@
   text-wrap: pretty;
 }
 
+/* Justified the about page*/
+@media (min-width: 641px) {
+  .hero-tagline {
+    text-align: justify;
+    hyphens: auto;
+    hyphenate-limit-chars: 8 3 3;
+  }
+}
+
 .hero-highlight {
   color: var(--color-accent);
   font-weight: var(--font-weight-medium);

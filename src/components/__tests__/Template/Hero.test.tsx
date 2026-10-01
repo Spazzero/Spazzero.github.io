@@ -1,7 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 
-import profile from '@/data/profile.json';
 import Hero from '../../Template/Hero';
 
 describe('Hero', () => {
@@ -19,17 +18,15 @@ describe('Hero', () => {
     expect(heading).toHaveTextContent('Gerald Yuen');
   });
 
-  it('describes the current role and links to the employer', () => {
+  it('introduces Gerald and links to SUTD', () => {
     const { container } = render(<Hero />);
 
-    const employerLink = screen.getByRole('link', {
-      name: /covalent capital/i,
-    });
-    expect(employerLink).toHaveAttribute('href', 'https://www.covacap.com/');
-    expect(employerLink).toHaveClass('hero-highlight');
+    const schoolLink = screen.getByRole('link', { name: 'SUTD' });
+    expect(schoolLink).toHaveAttribute('href', 'https://www.sutd.edu.sg');
+    expect(schoolLink).toHaveClass('hero-highlight');
 
     expect(container.querySelector('.hero-tagline')).toHaveTextContent(
-      `Currently a ${profile.role} at ${profile.employer}.`,
+      "I'm studying Engineering Systems Design at SUTD, and right now",
     );
   });
 
@@ -44,7 +41,6 @@ describe('Hero', () => {
     // Named credentials from this site's own resume data, so the check still
     // guards something. Asserting the upstream author's schools stayed absent
     // would pass no matter what the hero rendered.
-    expect(screen.queryByText('SUTD')).not.toBeInTheDocument();
     expect(screen.queryByText('Temasek Polytechnic')).not.toBeInTheDocument();
   });
 

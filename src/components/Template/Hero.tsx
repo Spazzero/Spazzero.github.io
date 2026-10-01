@@ -14,11 +14,15 @@ export default function Hero() {
           </h1>
 
           <p className="hero-tagline">
-            Currently a {profile.role} at{' '}
-            <a href="https://www.covacap.com/" className="hero-highlight">
-              {profile.employer}
+            I got into markets at 16, started investing and trading, and never
+            really stopped. These days I build data systems for financial
+            markets, drawing on a mix of programming, machine learning and data
+            analytics. I'm studying Engineering Systems Design at{' '}
+            <a href="https://www.sutd.edu.sg" className="hero-highlight">
+              SUTD
             </a>
-            .
+            , and right now I'm working toward CFA Level 1 and the Claude
+            Certified Developer exam.
           </p>
 
           <div className="hero-cta">
