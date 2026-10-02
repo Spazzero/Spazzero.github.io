@@ -6,7 +6,7 @@ I've been interested in financial markets since I was a teenager. Some of my ear
 
 At 18, I opened my first brokerage account. Trading crypto and equities taught me what risk tolerance and risk management actually mean in practice, and why conviction matters. Around the same time, I was studying Big Data and Analytics at Temasek Polytechnic, where I learned programming, predictive modelling and machine learning before it became cool. That gave me the conviction to make a few early bets on AI, particularly AMD and Palantir. My years in crypto had already made me comfortable with volatility, so I was able to hold those positions through the swings, to which I'm grateful for.
 
-After National Service, I started studying B.Eng. Engineering Systems Design at the Singapore University of Technology and Design, specialising in Financial Services. I'm currently preparing for the Claude Certified Architect exam and the CFA Level 1, and I'm looking for 2027 internships in tech and financial services.
+After National Service, I started studying B.Eng. Engineering Systems Design at the Singapore University of Technology and Design, specialising in Financial Services. I'm currently preparing for the Claude Certified Developer exam and the CFA Level 1, and I'm looking for 2027 internships in tech and financial services.
 
 If you'd like to collaborate or just talk markets and technology, feel free to reach out :)
 

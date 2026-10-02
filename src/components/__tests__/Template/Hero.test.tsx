@@ -26,8 +26,21 @@ describe('Hero', () => {
     expect(schoolLink).toHaveClass('hero-highlight');
 
     expect(container.querySelector('.hero-tagline')).toHaveTextContent(
-      "I'm studying Engineering Systems Design at SUTD, and right now",
+      "I'm studying Systems Engineering at SUTD and preparing for",
     );
+  });
+
+  it('links to the Claude Certified Developer certification', () => {
+    render(<Hero />);
+
+    const certLink = screen.getByRole('link', {
+      name: 'Claude Certified Developer',
+    });
+    expect(certLink).toHaveAttribute(
+      'href',
+      'https://anthropic-partners.skilljar.com/claude-certified-developer-foundations-certification',
+    );
+    expect(certLink).toHaveClass('hero-highlight');
   });
 
   it('keeps personal stats and incomplete credential lists off the homepage', () => {

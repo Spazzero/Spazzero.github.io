@@ -14,15 +14,19 @@ export default function Hero() {
           </h1>
 
           <p className="hero-tagline">
-            I got into markets at 16, started investing and trading, and never
-            really stopped. These days I build data systems for financial
-            markets, drawing on a mix of programming, machine learning and data
-            analytics. I'm studying Engineering Systems Design at{' '}
+            I've been into markets since 16, and now I build data systems for them using machine
+            learning, analytics and engineering. I'm studying Systems Engineering at{' '}
             <a href="https://www.sutd.edu.sg" className="hero-highlight">
               SUTD
-            </a>
-            , and right now I'm working toward CFA Level 1 and the Claude
-            Certified Developer exam.
+            </a>{' '}
+            and preparing for CFA Level 1 and the{' '}
+            <a
+              href="https://anthropic-partners.skilljar.com/claude-certified-developer-foundations-certification"
+              className="hero-highlight"
+            >
+              Claude Certified Developer
+            </a>{' '}
+            exam.
           </p>
 
           <div className="hero-cta">
