@@ -14,8 +14,9 @@ export default function Hero() {
           </h1>
 
           <p className="hero-tagline">
-            I've been into markets since 16, and now I build data systems for them using machine
-            learning, analytics and engineering. I'm studying Systems Engineering at{' '}
+            I've been into markets since 16, and now I build data systems for
+            them using machine learning, analytics and engineering. I'm studying
+            Systems Engineering at{' '}
             <a href="https://www.sutd.edu.sg" className="hero-highlight">
               SUTD
             </a>{' '}
