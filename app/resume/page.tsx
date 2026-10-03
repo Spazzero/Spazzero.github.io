@@ -28,11 +28,13 @@ export default function ResumePage() {
         <header className="resume-header">
           <h1 className="resume-title">Resume</h1>
           <p className="resume-summary">
-            DCM Analyst &amp; Data Engineer Intern at Covalent Capital, based in
-            Singapore. I work across debt origination and the data tooling that
-            supports it &mdash; bringing an engineering approach to fixed income
-            analysis. Previously at Japfa and Singapore Aquaculture
-            Technologies.
+            Engineering Systems Design undergraduate (Financial Services) and
+            current Debt Capital Market Analyst Intern. Brings two prior
+            internships in data validation, ETL pipelines, and systematic
+            anomaly detection. Applies capital markets knowledge across
+            equities, derivatives, and fixed income to derive analytically
+            grounded conclusions from financial data. Proficient in Python, SQL,
+            and R.
           </p>
           {/* Print-only, but real markup rather than CSS `content`, so it is
               selectable, linkable, and reads from the shared profile. The
