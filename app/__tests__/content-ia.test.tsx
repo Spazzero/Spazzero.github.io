@@ -50,8 +50,14 @@ describe('writing information architecture', () => {
     const { container } = render(<WritingPage />);
     const featured = container.querySelectorAll('.writing-item--featured');
 
+    // Outside `next build`, next/link does not see `trailingSlash: true`, so an
+    // internal post renders without the slash its canonical URL carries.
+    const expectedHref = newest?.isExternal
+      ? newest.url
+      : newest?.url.replace(/\/$/, '');
+
     expect(featured).toHaveLength(1);
-    expect(featured[0]).toHaveAttribute('href', newest?.url);
+    expect(featured[0]).toHaveAttribute('href', expectedHref);
   });
 
   it('shows provenance beside every external-link arrow', () => {
