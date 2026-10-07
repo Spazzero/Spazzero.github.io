@@ -24,17 +24,19 @@ cash flow.
 I don’t believe this will be the case for companies only offering good software
 in the coming decade.
 
-Some tech giants will remain safe for now. $AAPL and $META, for example, are
+Some tech giants will remain safe for now. Apple ($AAPL) and Meta ($META), for example, are
 deeply rooted in our daily lives. Apple’s ecosystem connects our phone, laptop,
 cloud storage, and work. The longer users stay, the more deeply entrenched they
 become in the ecosystem. Meta benefits from its network effect. The more people
 you know on the platform, the more valuable the platform becomes for you.
 
-I don’t see that kind of advantage for less sticky platforms such as $ADBE. The
+I don’t see that kind of advantage for less sticky platforms such as Adobe ($ADBE). The
 majority of Adobe’s revenue still comes from Creative Cloud, their subscription
 bundle of Photoshop, Illustrator, etc.
 
 ![Adobe annual revenue by segment, 2023 to 2025. Digital Media is the largest segment every year, reaching 17.65B USD in 2025, against 5.86B USD for Digital Experience and 256M USD for Publishing and Advertising.](/images/writing/proprietary-data/adobe-revenue-by-segment.png)
+
+_Source: TradingView_
 
 While these are incredibly useful tools and are insanely profitable for the
 company, the fact of the matter is that the market is forward-looking. A stock
@@ -46,7 +48,7 @@ the end customer will eventually lose those customers to hungrier competitors.
 ## Data is only as good as the processing
 
 So if software on its own isn’t enough, what is? The company that made the
-importance of proprietary data clear to me is Palantir, one of the
+importance of proprietary data clear to me is Palantir ($PLTR), one of the
 fastest-growing tech companies of recent years.
 
 Companies have been collecting data for decades. The trouble was that the value
@@ -80,11 +82,13 @@ I’m in the camp that believes the answer is data. Whichever company can collec
 and process the highest quality proprietary data will be the winner of the next
 decade.
 
-Duolingo is an example of a company I think the market is mispricing. Its stock
+Duolingo ($DUOL) is an example of a company I think the market is mispricing. Its stock
 price has dropped more than 80% in under a year, from $544.93 in May 2025 to
 $87.89 in April 2026.
 
 ![Weekly chart of Duolingo (NASDAQ: DUOL) from late 2022 to October 2026. The price peaks near $545 in May 2025, falls about 84% to a low under $90 in April 2026, then recovers to around $147.](/images/writing/proprietary-data/duolingo-share-price.png)
+
+_Source: TradingView_
 
 While mainstream media has been pricing Duolingo like a dead bird, the dead bird
 is the largest generator of learner data in the world. Every lesson, mistake,
@@ -92,6 +96,8 @@ and streak is incremental data on how people learn languages, and no other
 company collects labelled learner data at a similar scale.
 
 ![Duolingo’s summary of financial and key operating metrics, Q2 2025 against Q2 2026. Daily active users grew 23% from 47.7M to 58.7M and revenue grew 18% to $298.5M, while net income fell 26% to $33.2M and adjusted EBITDA margin fell from 31.2% to 25.9%.](/images/writing/proprietary-data/duolingo-q2-2026-metrics.png)
+
+_Source: [Duolingo Q2 2026 Shareholder Letter](https://investors.duolingo.com/static-files/3c8277ee-bc94-4f5d-9b77-0db3e46f88b8)_
 
 Duolingo keeps growing its daily active users (DAUs), from 47.7M in Q2 2025 to
 58.7M in Q2 2026. More active users mean more data, and more data means a better
