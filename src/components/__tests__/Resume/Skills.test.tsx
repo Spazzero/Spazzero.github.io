@@ -152,10 +152,10 @@ describe('Skills', () => {
 
   /**
    * Skills used to be ordered by a self-assessed 1-5 competency rating, which
-   * also drove tag size. Both are gone, so ordering within a group is purely
-   * alphabetical and carries no claim about proficiency.
+   * also drove tag size. Both are gone; ordering within a group now follows
+   * the data, which is curated by relevance to the roles being targeted.
    */
-  it('sorts skills alphabetically within a category', () => {
+  it('keeps data order within a category', () => {
     render(<Skills skills={mockSkills} categories={mockCategories} />);
 
     // Every group stays in the DOM so print.css can restore it, so the
@@ -170,9 +170,6 @@ describe('Skills', () => {
       group?.querySelectorAll('.skill-tag-name') ?? [],
     ).map((el) => el.textContent ?? '');
 
-    expect(skillNames.length).toBeGreaterThan(1);
-    expect(skillNames).toEqual(
-      [...skillNames].sort((a, b) => a.localeCompare(b)),
-    );
+    expect(skillNames).toEqual(['Python', 'TypeScript', 'JavaScript']);
   });
 });

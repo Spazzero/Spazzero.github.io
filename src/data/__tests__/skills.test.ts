@@ -70,12 +70,25 @@ describe('categories data', () => {
     }
   });
 
-  // Data quality: categories should be sorted for filter button display order
-  it('categories are sorted alphabetically by name', () => {
-    const names = categories.map((c) => c.name);
-    const sorted = [...names].sort();
+  // Group order is chosen for the roles being targeted, not alphabetised
+  it('categories follow the curated display order', () => {
+    expect(categories.map((c) => c.name)).toEqual([
+      'Programming',
+      'Analytics & BI',
+      'Markets',
+    ]);
+  });
 
-    expect(names).toEqual(sorted);
+  it('every category has at least one skill', () => {
+    for (const { name } of categories) {
+      expect(skills.some((s) => s.category.includes(name))).toBe(true);
+    }
+  });
+
+  it('each skill belongs to exactly one category', () => {
+    for (const skill of skills) {
+      expect(skill.category).toHaveLength(1);
+    }
   });
 
   it('all skill categories are represented', () => {

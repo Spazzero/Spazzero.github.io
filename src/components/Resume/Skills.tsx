@@ -50,21 +50,22 @@ export default function Skills({ skills, categories }: SkillsProps) {
    * Filtering by removing groups from the DOM meant a printed page reflected
    * whatever filter happened to be set, silently omitting skills. Keeping the
    * markup lets `print.css` show everything regardless.
+   *
+   * Skills keep the order they are listed in the data, which is curated by
+   * relevance rather than alphabetised.
    */
-  const groupedSkills = useMemo(() => {
-    const sortedSkills = [...skills].sort((a, b) =>
-      a.title.localeCompare(b.title),
-    );
-
-    return categories
-      .map((category) => ({
-        category,
-        skills: sortedSkills.filter((skill) =>
-          skill.category.includes(category.name),
-        ),
-      }))
-      .filter((group) => group.skills.length > 0);
-  }, [skills, categories]);
+  const groupedSkills = useMemo(
+    () =>
+      categories
+        .map((category) => ({
+          category,
+          skills: skills.filter((skill) =>
+            skill.category.includes(category.name),
+          ),
+        }))
+        .filter((group) => group.skills.length > 0),
+    [skills, categories],
+  );
 
   return (
     <div className="skills">
