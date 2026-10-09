@@ -92,6 +92,11 @@ One list of books, newest first
   color: var(--color-fg-light);
 }
 
+/* A book still being read is in progress, which is what signal is for. */
+.book-date--current {
+  color: var(--color-signal);
+}
+
 .book-rating {
   grid-area: rating;
   font-family: var(--font-mono);
@@ -99,6 +104,10 @@ One list of books, newest first
   letter-spacing: var(--tracking-wide);
   white-space: nowrap;
   color: var(--color-fg-bold);
+}
+
+.book-rating--unrated {
+  color: var(--color-fg-light);
 }
 
 .book-toggle {

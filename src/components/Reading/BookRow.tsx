@@ -12,9 +12,13 @@ function BookFields({ book }: BookRowProps) {
     <>
       <span className="book-title">{book.title}</span>
       <span className="book-author">{book.author}</span>
-      <time className="book-date" dateTime={book.finished}>
-        {formatFinished(book.finished)}
-      </time>
+      {book.finished === undefined ? (
+        <span className="book-date book-date--current">Currently reading</span>
+      ) : (
+        <time className="book-date" dateTime={book.finished}>
+          {formatFinished(book.finished)}
+        </time>
+      )}
       <Rating value={book.rating} />
     </>
   );

@@ -1,9 +1,19 @@
 interface RatingProps {
-  value: number;
+  /** Omitted for a book still being read. */
+  value?: number;
 }
 
 export default function Rating({ value }: RatingProps) {
-  // The stars are drawn for sighted readers; the count is what gets spoken.
+  if (value === undefined) {
+    return (
+      <span className="book-rating book-rating--unrated">
+        <span aria-hidden="true">{'☆'.repeat(5)}</span>
+        <span className="sr-only">Not yet rated</span>
+      </span>
+    );
+  }
+
+  // The stars are drawn for sighted readers
   return (
     <span className="book-rating">
       <span aria-hidden="true">{'★'.repeat(value)}</span>

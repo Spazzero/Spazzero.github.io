@@ -27,6 +27,16 @@ describe('getBooks', () => {
     ]);
   });
 
+  it('lists books still being read ahead of every finished one', () => {
+    const books = getBooks([
+      book('Finished', '2026-08-21'),
+      { title: 'Current', author: 'Author' },
+      book('Older', '2025-02-01'),
+    ]);
+
+    expect(books.map((b) => b.title)).toEqual(['Current', 'Finished', 'Older']);
+  });
+
   it('does not reorder the data it is given', () => {
     const books = [book('A', '2024-01-01'), book('B', '2025-01-01')];
     getBooks(books);

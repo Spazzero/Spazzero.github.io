@@ -50,7 +50,10 @@ export default function ReadingPage() {
 
         <ul className="reading-list" aria-label="Books read">
           {books.map((book) => (
-            <BookRow key={`${book.finished}-${book.title}`} book={book} />
+            <BookRow
+              key={`${book.finished ?? 'current'}-${book.title}`}
+              book={book}
+            />
           ))}
         </ul>
       </article>

@@ -23,12 +23,38 @@ describe('reading page', () => {
 
     expect(
       [...container.querySelectorAll('.book-date')].map((el) => el.textContent),
-    ).toEqual(getBooks().map((book) => formatFinished(book.finished)));
+    ).toEqual(
+      getBooks().map((book) =>
+        book.finished === undefined
+          ? 'Currently reading'
+          : formatFinished(book.finished),
+      ),
+    );
     expect(
       [...container.querySelectorAll('.book-rating .sr-only')].map(
         (el) => el.textContent,
       ),
-    ).toEqual(getBooks().map((book) => `${book.rating} out of 5`));
+    ).toEqual(
+      getBooks().map((book) =>
+        book.rating === undefined ? 'Not yet rated' : `${book.rating} out of 5`,
+      ),
+    );
+  });
+
+  it('marks a book still being read, with five empty stars and no date', () => {
+    const { container } = render(<ReadingPage />);
+    const current = container.querySelectorAll('.book-date--current');
+
+    expect(current).toHaveLength(
+      books.filter((book) => book.finished === undefined).length,
+    );
+    for (const date of current) {
+      const row = date.closest('.book-row');
+      expect(row?.querySelector('time')).toBeNull();
+      expect(
+        row?.querySelector('.book-rating--unrated [aria-hidden]')?.textContent,
+      ).toBe('☆☆☆☆☆');
+    }
   });
 
   it('makes only books with a note expandable', () => {
