@@ -4,6 +4,7 @@ date: '2026-01-10'
 description: 'A second placeholder, kept because it carries an explicit article image.'
 image: /images/writing/placeholder.png
 imageAlt: 'A neutral placeholder graphic standing in for an article image'
+draft: true
 ---
 
 This placeholder exists specifically to exercise the article-image path.

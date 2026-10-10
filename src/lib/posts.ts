@@ -34,9 +34,12 @@ const postsDirectory = path.join(process.cwd(), 'content/writing');
  * the index — must go through this. Filtering in the list helpers alone is
  * what previously exported a full draft with `robots: index, follow`, because
  * `generateStaticParams` was reading filenames directly.
+ *
+ * External writing in `src/data/writing.ts` shares this rule, so a draft link
+ * and a draft post behave identically.
  */
-function isPublished(post: Post): boolean {
-  return !post.draft || process.env.NODE_ENV === 'development';
+export function isPublished(item: { draft?: boolean }): boolean {
+  return !item.draft || process.env.NODE_ENV === 'development';
 }
 
 /** Every Markdown filename, drafts included. Internal to this module. */

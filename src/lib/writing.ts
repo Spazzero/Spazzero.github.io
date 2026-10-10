@@ -1,5 +1,7 @@
-import externalWriting from '@/data/writing';
-import { getAllPosts } from '@/lib/posts';
+import externalWriting, {
+  type WritingItem as ExternalWritingItem,
+} from '@/data/writing';
+import { getAllPosts, isPublished } from '@/lib/posts';
 
 export interface WritingItem {
   title: string;
@@ -33,6 +35,15 @@ function externalSource(url: string): string {
   return hostname;
 }
 
+/**
+ * External writing that may be shown. Every reader of `src/data/writing.ts`
+ * goes through this, so a draft link cannot leak into one surface but not
+ * another.
+ */
+export function getExternalWriting(): ExternalWritingItem[] {
+  return externalWriting.filter(isPublished);
+}
+
 /** Published on-site posts and selected external writing, newest first. */
 export function getWritingItems(): WritingItem[] {
   const internal: WritingItem[] = getAllPosts().map((post) => ({
@@ -43,11 +54,13 @@ export function getWritingItems(): WritingItem[] {
     isExternal: false,
     source: 'On this site',
   }));
-  const external: WritingItem[] = externalWriting.map((item) => ({
-    ...item,
-    isExternal: true,
-    source: externalSource(item.url),
-  }));
+  const external: WritingItem[] = getExternalWriting().map(
+    ({ draft: _draft, ...item }) => ({
+      ...item,
+      isExternal: true,
+      source: externalSource(item.url),
+    }),
+  );
 
   return [...internal, ...external].sort(compareWritingItems);
 }

@@ -1,7 +1,7 @@
-import writing from '@/data/writing';
 import { getAllPosts } from '@/lib/posts';
 import { WRITING_DESCRIPTION } from '@/lib/schema';
 import { AUTHOR_NAME, SITE_URL } from '@/lib/utils';
+import { getExternalWriting } from '@/lib/writing';
 
 export const dynamic = 'force-static';
 
@@ -38,7 +38,7 @@ export async function GET() {
   }));
 
   // Get external articles
-  const externalItems: FeedItem[] = writing
+  const externalItems: FeedItem[] = getExternalWriting()
     .filter((item) => item.date)
     .map((item) => ({
       title: item.title,

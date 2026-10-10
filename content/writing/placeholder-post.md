@@ -2,6 +2,7 @@
 title: 'Placeholder Post'
 date: '2026-01-15'
 description: 'A placeholder while real writing is being drafted. Replace or delete this once a first post is ready.'
+draft: true
 ---
 
 This is placeholder copy. It exists so the site has a published post to build

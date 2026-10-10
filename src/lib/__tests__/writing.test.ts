@@ -1,13 +1,21 @@
-import { describe, expect, it } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 
 import {
   compareWritingItems,
+  getExternalWriting,
   getWritingItems,
   type WritingItem,
 } from '../writing';
 
+afterEach(() => {
+  vi.unstubAllEnvs();
+});
+
 describe('getWritingItems', () => {
   it('merges published local posts and external writing newest first', () => {
+    // The external entries are draft templates, so merge them in the mode
+    // where drafts are visible.
+    vi.stubEnv('NODE_ENV', 'development');
     const items = getWritingItems();
 
     expect(items.some((item) => !item.isExternal)).toBe(true);
@@ -20,6 +28,13 @@ describe('getWritingItems', () => {
           index === 0 || dated[index - 1]!.date.localeCompare(item.date) >= 0,
       ),
     ).toBe(true);
+  });
+
+  it('hides draft external writing outside development', () => {
+    expect(getExternalWriting().some((item) => item.draft)).toBe(false);
+    expect(
+      getWritingItems().some((item) => item.url.includes('placeholder')),
+    ).toBe(false);
   });
 
   it('uses canonical trailing-slash URLs for local posts', () => {

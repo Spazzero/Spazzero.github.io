@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import { getPostSlugs } from '@/lib/posts';
 import { SITE_URL } from '@/lib/utils';
 import { getWritingItems } from '@/lib/writing';
 
@@ -10,7 +11,15 @@ describe('feed.xml route', () => {
     const xml = await response.text();
 
     expect(xml).toContain(`${SITE_URL}/writing/`);
-    expect(xml).toContain(`${SITE_URL}/writing/placeholder-post/`);
+    expect(xml).toContain(`${SITE_URL}/writing/${getPostSlugs()[0]}/`);
+  });
+
+  it('leaves draft posts and draft external links out', async () => {
+    const response = await GET();
+    const xml = await response.text();
+
+    expect(xml).not.toContain('/writing/placeholder-post/');
+    expect(xml).not.toContain('https://example.com/');
   });
 
   it('keeps the feed self link file-like', async () => {
