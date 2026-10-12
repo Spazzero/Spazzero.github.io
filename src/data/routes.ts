@@ -39,11 +39,6 @@ const routes: Route[] = [
     label: 'Contact',
     path: '/contact',
   },
-  {
-    label: 'Archive',
-    path: '/projects',
-    primary: false,
-  },
 ];
 
 export default routes;
