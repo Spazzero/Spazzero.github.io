@@ -8,8 +8,8 @@ I believe the tech landscape has changed dramatically behind the scenes over the
 
 Tech companies without an established pipeline for collecting constant, labelled user data will
 see their growth flatten faster than most people expect. The companies that keep growing will be
-the ones that constantly iterate on their customer data effectively. While technology is here to
-stay, and I believe it will remain among the highest growth sectors, only the companies that keep
+the ones that constantly iterate on their customer data effectively. While tech is here to
+stay, and I believe will remain among the highest growth sectors, only the companies that keep
 disrupting themselves will continue growing the way tech companies have over the past few decades.
 
 ## Surviving vs Flourishing
@@ -57,8 +57,8 @@ While replicating a music streaming app isn't hard anymore, what they can't repl
 database of listener data, or the pipeline they've built for collecting, analyzing, and iterating on
 it.
 
-Spotify's stock closed 2022 at about $79, right as generative AI started taking off, and trades
-around $529 today. That's up roughly 570%, or about 65% a year compounded.
+Spotify's stock started 2023 at about $84, right as generative AI started taking off, and trades
+around $529 today. That's up roughly 531%, or about 63% a year compounded.
 
 ## Adobe
 
@@ -83,9 +83,9 @@ _Source: Spotify Form 20-F and Adobe Form 10-K filings (SEC)_
 Adobe closed 2022 at about $337 and trades around $238 today, down about 29%, while Spotify's stock
 rose more than sixfold.
 
-![Month-end share prices for Spotify and Adobe, indexed to 100 at December 2022, through October 2026. Spotify climbs to a peak near 970 in mid-2025 and ends around 670, up about 570%; Adobe drifts below its starting level and ends down about 29%.](/images/writing/disrupt-yourself/share-price-spotify-vs-adobe.png)
+![Weekly chart of Spotify (NYSE: SPOT) and Adobe (NASDAQ: ADBE) as percentage change from January 2023 to October 2026. Spotify peaks above 800% in mid-2025 and ends up about 531%; Adobe drifts below its starting level and ends down about 29%.](/images/writing/disrupt-yourself/share-price-spotify-vs-adobe.png)
 
-_Source: [Digrin](https://digrin.com)_
+_Source: TradingView_
 
 While I don't believe stock price is an accurate representation of the value of a company, this
 aligns nicely with my theory.
