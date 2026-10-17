@@ -18,6 +18,13 @@ export interface WritingItem {
  */
 const data: WritingItem[] = [
   {
+    title: 'Disrupt Yourself or Be Disrupted',
+    url: 'https://geraldgy.substack.com/p/disrupt-yourself-or-be-disrupted',
+    date: '2026-10-16',
+    description:
+      'As AI makes software easier to copy, the tech companies that keep growing will be the ones that iterate on proprietary customer data.',
+  },
+  {
     title: 'Placeholder External Article',
     url: 'https://example.com/',
     date: '2026-01-20',

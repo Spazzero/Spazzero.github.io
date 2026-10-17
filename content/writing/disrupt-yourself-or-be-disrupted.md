@@ -2,6 +2,7 @@
 title: 'Disrupt Yourself or Be Disrupted'
 date: '2026-10-13'
 description: 'As AI makes software easier to copy, the tech companies that keep growing will be the ones that iterate on proprietary customer data.'
+draft: true
 ---
 
 I believe the tech landscape has changed dramatically behind the scenes over the past few years.
