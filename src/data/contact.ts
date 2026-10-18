@@ -1,6 +1,7 @@
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
+import { faSubstack } from '@fortawesome/free-brands-svg-icons/faSubstack';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons/faEnvelope';
 // Paired with the commented-out entries below. `noUnusedImports` is an error,
 // so an import has to stay commented for exactly as long as its entry does.
@@ -27,6 +28,11 @@ const data: ContactItem[] = [
     link: 'https://github.com/Spazzero',
     label: 'GitHub',
     icon: faGithub,
+  },
+  {
+    link: 'https://geraldgy.substack.com/',
+    label: 'Substack',
+    icon: faSubstack,
   },
   /*
   {
